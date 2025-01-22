@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tutorial HTML5 e CSS</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Exercício HTML Autoração Multimídia</h1>
+    </header>
+    <main>
+      <section class="caixa" id="incluing-imgs">
+        <h1>Imagens com Lorem Picsum</h1>
+
+        <div class="scroller">
+          <!-- Imagem fixando tamanho de 300x200 -->
+          <img
+            src="https://picsum.photos/360/180"
+            alt="Uma imagem aleatória de 360x180"
+          />
+
+          <!-- Imagem com tamanho maior e descrição no alt -->
+          <img
+            src="https://picsum.photos/640/320"
+            alt="Outra imagem aleatória"
+          />
+
+          <!-- Exercício extra: tente mudar valores para ver diferentes imagens. -->
+          <img
+            src="https://picsum.photos/400"
+            alt="imagem quadrada aleatória"
+          />
+        </div>
+      </section>
+      <section class="caixa" id="inline-svgs">
+        <h1>Inline Svgs</h1>
+
+        <!-- Exemplo de um retângulo e um círculo simples -->
+        <svg width="200" height="200">
+          <rect x="10" y="10" width="100" height="50" fill="green" />
+          <circle cx="70" cy="120" r="40" fill="blue" />
+        </svg>
+      </section>
+      <section class="caixa" id="img-svg">
+        <h1>SVG via &lt;img&gt;</h1>
+
+        <!-- O SVG é importado como imagem -->
+        <img
+          src="https://dvisvgm.de/Examples/images/frktest.svg"
+          alt="Texto escrito com a fonte Fraktur, desenvolvida por Yannis Haralambous"
+        />
+      </section>
+
+      <section class="caixa" id="custom-svg">
+        <h1>Custom SVGS</h1>
+        <div class="caixa">
+          <div class="svg-flex">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="PersonIcon">
+                <path
+                  d="M4 20.5H20C20 20.5 20 13.5 12 13.5C4 13.5 4 20.5 4 20.5Z"
+                  fill="black"
+                />
+                <path
+                  d="M12 12.5C18 12.5 18 3.5 12 3.5C6 3.5 6 12.5 12 12.5Z"
+                  fill="black"
+                />
+              </g>
+            </svg>
+            <span>inline svg</span>
+          </div>
+          <div class="svg-flex">
+            <img src="./desenho.svg" alt="um ícone de perfil" />
+            <span>img imported svg</span>
+          </div>
+        </div>
+      </section>
+      <section class="caixa" id="audio-handling ">
+        <h1>Áudio Embutido</h1>
+        <!-- Coloque o arquivo mp3 na mesma pasta ou use um link para a Web -->
+        <audio controls>
+          <source
+            src="https://github.com/rafaelreis-hotmart/Audio-Sample-files/raw/refs/heads/master/sample.mp3"
+            type="audio/mpeg"
+          />
+          Seu navegador não suporta a tag de áudio!
+        </audio>
+
+        <!-- Exercício: procure um áudio livre na web, coloque-o e teste. -->
+      </section>
+      <section class="caixa" id="video-handling">
+        <h1>Vídeo Embutido</h1>
+        <video width="320" height="240" controls>
+          <source
+            src="https://github.com/rafaelreis-hotmart/Audio-Sample-files/raw/refs/heads/master/sample.mp4"
+            type="video/mp4"
+          />
+          Seu navegador não suporta a tag de vídeo!
+        </video>
+
+        <!-- Exercício: tente ajustar o tamanho do player, autoplay e etc. -->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025</p>
+      <a href="./index.html">Gráfico</a>
+    </footer>
+  </body>
+</html>

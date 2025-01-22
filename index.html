@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Gráfico SVG</title>
+  </head>
+  <body>
+    <header>
+      <h1>Exercício HTML Autoração Multimídia</h1>
+    </header>
+
+    <main id="graph-main">
+      <h1>Gráfico 2D Interativo em SVG</h1>
+      <div class="caixa">
+        <div class="graph-container">
+          <svg id="my-chart" viewBox="0 0 400 400">
+            <!-- Eixo X -->
+            <line
+              id="x-axis"
+              x1="40"
+              y1="360"
+              x2="360"
+              y2="360"
+              stroke="#333"
+              stroke-width="2"
+            />
+            <!-- Eixo Y -->
+            <line
+              id="y-axis"
+              x1="40"
+              y1="40"
+              x2="40"
+              y2="360"
+              stroke="#333"
+              stroke-width="2"
+            />
+
+            <circle
+              id="data-point"
+              cx="40"
+              cy="250"
+              r="6"
+              fill="var(--secondary)"
+            />
+          </svg>
+        </div>
+        <div class="controls">
+          <label for="x-slider">Valor de X:</label>
+          <input type="range" id="x-slider" min="0" max="100" value="50" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025</p>
+      <a href="./tuto.html">Outros</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
