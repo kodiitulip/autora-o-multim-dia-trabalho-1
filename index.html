@@ -36,7 +36,6 @@
               stroke="#333"
               stroke-width="2"
             />
-
             <circle
               id="data-point"
               cx="40"
@@ -47,8 +46,18 @@
           </svg>
         </div>
         <div class="controls">
-          <label for="x-slider">Valor de X:</label>
-          <input type="range" id="x-slider" min="0" max="100" value="50" />
+          <div class="x-controls">
+            <label for="x-slider">Valor de X:</label>
+            <input type="range" id="x-slider" min="0" max="100" value="50" />
+            <p id="x-val">0</p>
+          </div>
+          <div class="y-controls">
+            <label for="y-function">Função: y=a*x+b</label>
+            <input type="text" id="y-function" value="1*x+2"/>
+            <button id="visualize">Visualizar</button>
+            <p id="y-val">0</p>
+            <p id="y-validation"></p>
+          </div>
         </div>
       </div>
     </main>
@@ -57,6 +66,17 @@
       <p>&copy; 2025</p>
       <a href="./tuto.html">Outros</a>
     </footer>
+
+    <template id="graph-dash">
+      <line
+        x1="30"
+        x2="50"
+        y1="72"
+        y2="72"
+        stroke="#333"
+        stroke-width="2"
+      />
+    </template>
 
     <script src="script.js"></script>
   </body>

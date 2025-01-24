@@ -120,7 +120,7 @@ video {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 520px) {
   .controls {
     flex-direction: column;
 
@@ -132,4 +132,10 @@ video {
   .caixa:has(.graph-container) {
     padding: 1rem;
   }
+}
+
+#y-validation {
+  position: absolute;
+  color: #900000;
+  font-weight: 700;
 }
